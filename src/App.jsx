@@ -10,13 +10,13 @@ function App() {
 
   return(
     <>
-    <Analytics>
+     
      <Nav />
      <Hero />
      <Escape />
      {/* <Things />
      <News /> */}
-    </Analytics>
+     <Analytics />
     </>
   )
 }
