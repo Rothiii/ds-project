@@ -4,7 +4,6 @@ import Hero from './components/Hero'
 import Escape from './components/Escape/Escape'
 import Things from './components/Thing/Things'
 
-
 function App() {
 
   return(
