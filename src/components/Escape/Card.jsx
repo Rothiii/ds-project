@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 function Card({gambar, judul, desc}) {
     return (
-      <div className="flex justify-start gap-6 ml-[6vw] w-[1000vw] xl:h-[8vw] xl:w-[30vw]">
+      <div className="flex justify-start gap-6 ml-[6vw] w-[90vw] xl:h-[8vw] xl:w-[30vw]">
         <div className="">
           {/* <h1>{gambar}</h1> */}
           <img src={gambar} alt="" className="rounded-2xl xl:rounded-3xl object-cover object-center w-[50vw] md:w-[25vw] xl:w-[10vw] xl:h-[8vw]"/>
