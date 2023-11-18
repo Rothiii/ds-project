@@ -8,14 +8,15 @@ import { Inject } from '@vercel/analytics'
 
 function App() {
 
-  Inject()
   return(
     <>
+    <Inject>
      <Nav />
      <Hero />
      <Escape />
      {/* <Things />
      <News /> */}
+    </Inject>
     </>
   )
 }
