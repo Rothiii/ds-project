@@ -8,7 +8,7 @@ function Things() {
         <h2>More Things To Do </h2>
       </div>
       <div className='grid grid-cols-4 gap-6 place-items-center'>
-        <Card gambar={"./vite.sv"} judul={"Judul 1"} desc={"Desc 1"}/>
+        <Card gambar={"./vite.sv"} caption={"logo"} judul={"Judul 1"} desc={"Desc 1"}/>
         <Card gambar={"gambar2"} judul={"Judul 2"} desc={"Desc 2"}/>
         <Card gambar={"gambar3"} judul={"Judul 3"} desc={"Desc 3"}/>
         <Card gambar={"gambar4"} judul={"Judul 4"} desc={"Desc 4"}/>

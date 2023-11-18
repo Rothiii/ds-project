@@ -2,9 +2,9 @@
 
 function Hero() {
   return (
-    <div className="bg-local bg-cover bg-center h-[89vh]" style={{backgroundImage: "url(./hompage-bg.svg)"}}>
+    <div className="bg-local bg-cover bg-center h-[65vh] xl:h-[89vh] w-screen" style={{backgroundImage: "url(./hompage-bg.svg)"}}>
         {/* <Nav /> */}
-        <h1 className="text-[58px] w-[35vw] mx-[10rem] pt-[5rem] text-white font-bold">
+        <h1 className="text-[8vw] md:text-[5vh] md:mx-[8rem] pt-[7rem] xl:pr-[40rem] px-[2rem] md:pt-[6rem] text-white text-center md:text-left font-bold">
             No matter where you’re going to, we’ll take you there and discover Balikpapan City!
         </h1>
     </div>
