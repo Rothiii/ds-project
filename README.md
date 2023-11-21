@@ -16,6 +16,7 @@ type command below into terminal
 you need to install the package
 
 `yarn install`
+`npm i -D daisyui@latest`
 
 ### Second
 

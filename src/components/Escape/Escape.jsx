@@ -4,7 +4,7 @@ function Escape() {
   return (
     <div className="">
       <h1 className="pl-[1.5rem] xl:pl-[6rem] my-[1rem] font-bold text-[7vw] md:text-[5vw] lg:text-[2vw]">Escape The Ordinary</h1>
-      {/* Pembungkus Kolom Kiri Kanan */}
+      {/* Wrapper Kolom Kiri Kanan */}
       <div className="flex flex-col xl:flex-row gap-10 xl:gap-1">
         {/* Kolom Kiri */}
         <div className="ml-[5vw]">
@@ -13,6 +13,7 @@ function Escape() {
             alt=""
             className="rounded-2xl xl:rounded-3xl object-cover object-center justify-center items-center h-[50vw] xl:h-[30vw] xl:w-[50vw]"/>
         </div>
+        {/* Content */}
         {/* kolom kanan */}
         <div className="flex flex-col justify-center gap-5 xl:ml-[vw] xl:h-[30vw] xl:w-[25vw]">
           <Card

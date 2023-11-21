@@ -1,20 +1,40 @@
+import Button from './Button.jsx'
 function Nav() {
   return (
-    // <div className="absolute flex justify-around py-[1.5rem] w-full">
-    //   <h1>Explore Balikpapan</h1>
-    //   <ul className="flex gap-20 text-white font-medium text-[25px]">
-    //     <li><a href="">Home</a></li>
-    //     <li><a href="/about">About</a></li>
-    //     <li><a href="">Services</a></li>
-    //     <li><a href="">Upcoming Packages</a></li>
-    //   </ul>
-    //   <button className="bg-orange-600 text-white px-4 py-2 rounded-lg">Get In Touch</button>
-
-    // </div>
     <div className="navbar bg-base-100 absolute flex justify-around py-[1.5rem] md:px-[4rem]">
-      <div className="navbar-start">
-        <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+      <div className="navbar-start hidden lg:inline-flex">
+        <a className="btn btn-ghost text-xl">LOGO</a>
+      </div>
+      <div className="navbar-center">
+        <ul className="menu menu-horizontal text-white font-semibold text-[3vw] md:text-[2vw] lg:text-[1vw] p-[0px]">
+          <li>
+            <a>Home</a>
+          </li>
+          <li>
+            <a>About</a>
+          </li>
+          <li tabIndex={0}>
+            <details>
+              <summary>Services</summary>
+              <ul className="p-2 text-black">
+                <li>
+                  <a>Things To Do</a>
+                </li>
+                <li>
+                  <a>Discover Balikpapan</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a>Upcomming Packages</a>
+          </li>
+        </ul>
+      </div>
+      {/* <div className="navbar-end xl:hidden">
+        <a className="btn btn-ghost bg-orange-500 text-white ">Get In Touch</a>
+        <div className="dropdown text-left">
+          <label tabIndex={0} className="btn btn-ghost xl:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -32,7 +52,7 @@ function Nav() {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className=" flex justify menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-semibold text-black"
           >
             <li>
               <a>Home</a>
@@ -44,10 +64,10 @@ function Nav() {
               <a>Services</a>
               <ul className="p-2">
                 <li>
-                  <a>Submenu 1</a>
+                  <a>Things To do</a>
                 </li>
                 <li>
-                  <a>Submenu 2</a>
+                  <a>Discover Balikpapan</a>
                 </li>
               </ul>
             </li>
@@ -56,36 +76,9 @@ function Nav() {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">LOGO</a>
-      </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Home</a>
-          </li>
-          <li>
-            <a>About</a>
-          </li>
-          <li tabIndex={0}>
-            <details>
-              <summary>Services</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <a>Upcomming Packages</a>
-          </li>
-        </ul>
-      </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
+      </div> */}
+      <div className='navbar-end hidden lg:inline-flex'>
+        <Button/>
       </div>
     </div>
   );
