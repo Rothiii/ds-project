@@ -1,6 +1,6 @@
 import './App.css'
 import Nav from './components/Nav/Nav'
-import Hero from './components/Hero'
+import Hero from './components/Hero/Hero'
 import Escape from './components/Escape/Escape'
 import Things from './components/Thing/Things'
 import News from './components/News/News'
