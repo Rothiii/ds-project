@@ -16,7 +16,7 @@ function Nav() {
           <li tabIndex={0}>
             <details>
               <summary>Services</summary>
-              <ul className="p-2 text-black">
+              <ul className="p-2 text-black bg-zinc-300/50">
                 <li>
                   <a>Things To Do</a>
                 </li>
@@ -77,8 +77,8 @@ function Nav() {
           </ul>
         </div>
       </div> */}
-      <div className='navbar-end hidden lg:inline-flex'>
-        <Button/>
+      <div className='navbar-end hidden lg:inline-flex '>
+        <Button />
       </div>
     </div>
   );

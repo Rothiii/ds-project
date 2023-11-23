@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
 function Card({gambar, caption, judul, desc}) {
   return (
-    <div className="w-[20rem]">
-      <div className="bg-red-100">
-        {/* <h1>{gambar}</h1> */}
-        <img src={gambar} alt={caption} />
+    <div className="p-2 w-[40vw] md:w-[35vw] lg:w-[20vw] xl:w-[18vw] rounded-2xl shadow-xl">
+      <div className="">
+        <img src={gambar} alt={caption} className="rounded-2xl xl:rounded-3xl object-cover object-center w-[40vw] md:w-[45vw] lg:w-[25vw] xl:w-[17vw] xl:h-[15vw]"/>
       </div>
-      <h2 className="bg-red-500">{judul}</h2>
-      <h3 className="bg-red-300">{desc}</h3>
+      <h1 className="font-bold text-[4vw] md:text-[3vw] xl:text-[1.5vw]">{judul}</h1>
+      <p className="text-[2.9vw] md:text-[1.68vw] xl:text-[0.9vw] line-clamp-5 xl:line-clamp-4">{desc}</p>
     </div>
+    
   )
 }
 

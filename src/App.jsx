@@ -14,8 +14,8 @@ function App() {
      <Nav />
      <Hero />
      <Escape />
-     {/* <Things />
-     <News /> */}
+     <Things />
+     {/* <News /> */}
      <Analytics />
     </>
   )

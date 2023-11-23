@@ -1,21 +1,23 @@
-import Card from "./Card";
+import Card from './Card';
 
 function Escape() {
   return (
     <div className="">
-      <h1 className="pl-[1.5rem] xl:pl-[6rem] my-[1rem] font-bold text-[7vw] md:text-[5vw] lg:text-[2vw]">Escape The Ordinary</h1>
+      <h1 className="pl-[6vw] xl:pl-[8vw] my-[1rem] font-bold text-[7vw] md:text-[4vw] lg:text-[2vw]">
+        Escape The Ordinary
+      </h1>
       {/* Wrapper Kolom Kiri Kanan */}
-      <div className="flex flex-col xl:flex-row gap-10 xl:gap-1">
+      <div className="flex flex-col xl:flex-row justify-start gap-10 lg:pl-[1vw] xl:pl-[3vw]">
         {/* Kolom Kiri */}
-        <div className="ml-[5vw]">
-          <img 
-            src="./eto.png" 
+        <div className="ml-[6vw] lg:ml-[5vw]">
+          <img
+            src="./eto.png"
             alt=""
-            className="rounded-2xl xl:rounded-3xl object-cover object-center justify-center items-center h-[50vw] xl:h-[30vw] xl:w-[50vw]"/>
+            className="rounded-2xl xl:rounded-3xl object-cover object-center justify-center items-center h-[50vw] xl:h-[30vw] xl:w-[50vw]"
+          />
         </div>
-        {/* Content */}
-        {/* kolom kanan */}
-        <div className="flex flex-col justify-center gap-5 xl:ml-[vw] xl:h-[30vw] xl:w-[25vw]">
+        {/* kolom kanan Sebagai content*/}
+        <div className="flex flex-col justify-center items-start gap-5 lg:pl-[5vw] xl:pl-[1vw]">
           <Card
             gambar="./eto2.png"
             judul="Lorem ipsum"
