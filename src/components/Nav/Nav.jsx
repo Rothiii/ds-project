@@ -6,27 +6,27 @@ function Nav() {
         <a className="btn btn-ghost text-xl">LOGO</a>
       </div>
       <div className="navbar-center">
-        <ul className="menu menu-horizontal text-white font-semibold text-[3vw] md:text-[2vw] lg:text-[1vw] p-[0px]">
-          <li>
+        <ul className="menu menu-horizontal text-white font-semibold text-[3vw] md:text-[2vw] lg:text-[1.2vw] p-[0px]">
+          <li className='hover:text-black'>
             <a>Home</a>
           </li>
-          <li>
+          <li className='hover:text-black'>
             <a>About</a>
           </li>
           <li tabIndex={0}>
             <details>
-              <summary>Services</summary>
+              <summary className='hover:text-black'>Services</summary>
               <ul className="p-2 text-black bg-zinc-300/50">
-                <li>
+                <li className='hover:text-white'>
                   <a>Things To Do</a>
                 </li>
-                <li>
+                <li className='hover:text-white'>
                   <a>Discover Balikpapan</a>
                 </li>
               </ul>
             </details>
           </li>
-          <li>
+          <li className='hover:text-black'>
             <a>Upcomming Packages</a>
           </li>
         </ul>
