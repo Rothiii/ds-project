@@ -1,4 +1,5 @@
 import Card from './Card';
+import { DataEscape } from '../../Data/DataEscape';
 
 function Escape() {
   return (
@@ -18,21 +19,16 @@ function Escape() {
         </div>
         {/* kolom kanan Sebagai content*/}
         <div className="flex flex-col justify-center items-start gap-5 lg:pl-[5vw] xl:pl-[1vw]">
-          <Card
-            gambar="./eto2.png"
-            judul="Lorem ipsum"
-            desc="Sun qui doloremque quia. Quisquam voluptatem voluptatem voluptatem. adsadadadadaddas ddsa asasdadasdasasdasd as das d  /adadas asd as adsd saaasdasd ad asd as as ds adskl"
-          />
-          <Card
-            gambar="./eto2.png"
-            judul="Lorem ipsum"
-            desc="Sun qui doloremque quia. Quisquam voluptatem voluptatem voluptatem."
-          />
-          <Card
-            gambar="./eto2.png"
-            judul="Lorem ipsum"
-            desc="Sun qui doloremque quia. Quisquam voluptatem voluptatem voluptatem."
-          />
+          {DataEscape.map((item) => {
+            return (
+              <Card
+                key={item.id}
+                gambar={item.gambar}
+                judul={item.judul}
+                desc={item.desc}
+              />
+            );
+          })}
         </div>
       </div>
     </div>
