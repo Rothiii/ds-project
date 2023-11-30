@@ -2,8 +2,8 @@ import Button from './Button.jsx'
 function Nav() {
   return (
     <div className="navbar bg-base-100 absolute flex justify-around py-[1.5rem] md:px-[4rem]">
-      <div className="navbar-start hidden lg:inline-flex">
-        <a className="btn btn-ghost text-xl">LOGO</a>
+      <div className="hidden navbar-start lg:inline-flex">
+        <a className="text-xl btn btn-ghost">LOGO</a>
       </div>
       <div className="navbar-center">
         <ul className="menu menu-horizontal text-white font-semibold text-[3vw] md:text-[2vw] lg:text-[1.2vw] p-[0px]">
@@ -32,12 +32,12 @@ function Nav() {
         </ul>
       </div>
       {/* <div className="navbar-end xl:hidden">
-        <a className="btn btn-ghost bg-orange-500 text-white ">Get In Touch</a>
-        <div className="dropdown text-left">
+        <a className="text-white bg-orange-500 btn btn-ghost ">Get In Touch</a>
+        <div className="text-left dropdown">
           <label tabIndex={0} className="btn btn-ghost xl:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="w-5 h-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -77,7 +77,7 @@ function Nav() {
           </ul>
         </div>
       </div> */}
-      <div className='navbar-end hidden lg:inline-flex '>
+      <div className='hidden navbar-end lg:inline-flex '>
         <Button />
       </div>
     </div>

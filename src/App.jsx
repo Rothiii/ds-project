@@ -5,6 +5,7 @@ import Escape from './components/Escape/Escape'
 import Things from './components/Thing/Things'
 import News from './components/News/News'
 import { Analytics } from '@vercel/analytics/react'
+import Perjanjian from './pages/Perjanjian'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
      <Escape />
      <Things />
      {/* <News /> */}
+     <Perjanjian />
      <Analytics />
     </>
   )
