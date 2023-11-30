@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 // import Mailing from "../Mailing"
-=======
-import Mailing from "../Mailing"
->>>>>>> 4abe0567ab9d1c41913eee669c5581191cfbe1e9
 function button() {
   return (
     <div>
