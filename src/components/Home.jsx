@@ -2,8 +2,9 @@ import Nav from './Nav/Nav'
 import Hero from './Hero/Hero'
 import Escape from './Escape/Escape'
 import Things from './Thing/Things'
-import News from './News/News'
+import Pledge from './Pledge/Pledge'
 import { Analytics } from '@vercel/analytics/react'
+
 const HomePage = () => {
     return (
         <div className="content">
@@ -11,7 +12,7 @@ const HomePage = () => {
             <Hero />
             <Escape />
             <Things />
-            {/* <News /> */}
+            <Pledge />
             <Analytics />
         </div>
     );

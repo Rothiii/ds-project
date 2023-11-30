@@ -27,7 +27,7 @@ function Nav() {
             </details>
           </li>
           <li className='hover:text-black'>
-            <a>Upcomming Packages</a>
+            <a>How To get There</a>
           </li>
         </ul>
       </div>
