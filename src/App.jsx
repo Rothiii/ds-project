@@ -5,7 +5,7 @@ import Mailing from './components/Mailing'
 import Article from './components/Article'
 import Perjanjian from './pages/Perjanjian'
 import About from './pages/About'
-import HtgtPage from './components/howToGetThere/htgtPage'
+import HtgtPage from './components/howToGetThere/HtgtPage'
 import FlightPage from './components/flights/FlightPage'
 function App() {
   const router = createBrowserRouter([
