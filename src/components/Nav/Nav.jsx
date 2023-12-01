@@ -8,7 +8,7 @@ function Nav() {
       <div className="navbar-center">
         <ul className="menu menu-horizontal text-white font-semibold text-[3vw] md:text-[2vw] lg:text-[1.2vw] p-[0px]">
           <li className='hover:text-black'>
-            <a>Home</a>
+            <a href='/'>Home</a>
           </li>
           <li className='hover:text-black'>
             <a href='/about'>About</a>
