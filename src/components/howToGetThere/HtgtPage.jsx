@@ -11,7 +11,7 @@ const HtgtPage = () => {
                 </h1>
             </div>
             
-            <div className="flex justify-between items-end ">
+            <div className="flex items-end justify-between ">
                 <p className="pl-[6vw] xl:pl-[8vw] my-[1rem] font-bold text-[6vw] md:text-[4vw] lg:text-[2vw]">
                 Accomodations Available
                 </p>
