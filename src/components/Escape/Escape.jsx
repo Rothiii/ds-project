@@ -1,10 +1,9 @@
 import Card from './Card';
-import { DataEscape } from '../../Data/DataEscape';
 
 function Escape() {
   return (
     <div className="">
-      <h1 className="pl-[6vw] xl:pl-[8vw] my-[1rem] font-bold text-[7vw] md:text-[4.5vw] lg:text-[2vw]">
+      <h1 className="pl-[6vw] xl:pl-[8vw] my-[1rem] font-bold text-[7vw] md:text-[4vw] lg:text-[2vw]">
         Escape The Ordinary
       </h1>
       {/* Wrapper Kolom Kiri Kanan */}
@@ -19,16 +18,21 @@ function Escape() {
         </div>
         {/* kolom kanan Sebagai content*/}
         <div className="flex flex-col justify-center items-start gap-5 lg:pl-[5vw] xl:pl-[1vw]">
-          {DataEscape.map((item) => {
-            return (
-              <Card
-                key={item.id}
-                gambar={item.gambar}
-                judul={item.judul}
-                desc={item.desc}
-              />
-            );
-          })}
+          <Card
+            gambar="./eto2.png"
+            judul="Lorem ipsum"
+            desc="Sun qui doloremque quia. Quisquam voluptatem voluptatem voluptatem. adsadadadadaddas ddsa asasdadasdasasdasd as das d  /adadas asd as adsd saaasdasd ad asd as as ds adskl"
+          />
+          <Card
+            gambar="./eto2.png"
+            judul="Lorem ipsum"
+            desc="Sun qui doloremque quia. Quisquam voluptatem voluptatem voluptatem."
+          />
+          <Card
+            gambar="./eto2.png"
+            judul="Lorem ipsum"
+            desc="Sun qui doloremque quia. Quisquam voluptatem voluptatem voluptatem."
+          />
         </div>
       </div>
     </div>
