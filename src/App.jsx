@@ -4,7 +4,8 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import Mailing from './components/Mailing'
 import Article from './components/Article'
 import Perjanjian from './pages/Perjanjian'
-
+import About from './pages/About'
+import htgtPage from './components/howToGetThere/htgtPage'
 function App() {
   const router = createBrowserRouter([
     {
@@ -16,12 +17,20 @@ function App() {
       element: <Mailing />
     },
     {
-      path: 'article',
+      path: '/article',
       element: <Article />
     },
     {
       path: '/pledge',
       element: <Perjanjian />
+    },
+    {
+      path: '/about',
+      element: <About />
+    },
+    {
+      path: '/how-to-get-there',
+      element: <htgtPage />
     }
   ])
   return(
