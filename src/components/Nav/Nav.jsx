@@ -2,42 +2,42 @@ import Button from './Button.jsx'
 function Nav() {
   return (
     <div className="navbar bg-base-100 absolute flex justify-around py-[1.5rem] md:px-[4rem]">
-      <div className="hidden navbar-start lg:inline-flex">
-        <a className="text-xl btn btn-ghost">LOGO</a>
+      <div className="navbar-start hidden lg:inline-flex">
+        <a className="btn btn-ghost text-xl">LOGO</a>
       </div>
       <div className="navbar-center">
-        <ul className="menu menu-horizontal text-white font-semibold text-[3vw] md:text-[2vw] lg:text-[1.2vw] p-[0px]">
-          <li className='hover:text-gray-300'>
-            <a href='/'>Home</a>
+        <ul className="menu menu-horizontal text-white font-semibold text-[3vw] md:text-[2vw] lg:text-[1vw] p-[0px]">
+          <li>
+            <a>Home</a>
           </li>
-          <li className='hover:text-gray-300'>
-            <a href='/about'>About</a>
+          <li>
+            <a>About</a>
           </li>
           <li tabIndex={0}>
             <details>
-              <summary className='hover:text-gray-300'>Services</summary>
+              <summary>Services</summary>
               <ul className="p-2 text-black bg-zinc-300/50">
-                <li className='hover:text-gray-600'>
+                <li>
                   <a>Things To Do</a>
                 </li>
-                <li className='hover:text-gray-600'>
+                <li>
                   <a>Discover Balikpapan</a>
                 </li>
               </ul>
             </details>
           </li>
-          <li className='hover:text-gray-300'>
-            <a href='/how-to-get-there'>How To get There</a>
+          <li>
+            <a>Upcomming Packages</a>
           </li>
         </ul>
       </div>
       {/* <div className="navbar-end xl:hidden">
-        <a className="text-white bg-orange-500 btn btn-ghost ">Get In Touch</a>
-        <div className="text-left dropdown">
+        <a className="btn btn-ghost bg-orange-500 text-white ">Get In Touch</a>
+        <div className="dropdown text-left">
           <label tabIndex={0} className="btn btn-ghost xl:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-5"
+              className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -77,7 +77,7 @@ function Nav() {
           </ul>
         </div>
       </div> */}
-      <div className='hidden navbar-end lg:inline-flex '>
+      <div className='navbar-end hidden lg:inline-flex '>
         <Button />
       </div>
     </div>
