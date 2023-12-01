@@ -1,56 +1,26 @@
-import './App.css'
-import HomePage from './components/Home'
-import {createBrowserRouter, RouterProvider} from "react-router-dom"
-import Mailing from './components/Mailing'
-import Article from './components/Article'
-import Perjanjian from './pages/Perjanjian'
-import About from './pages/About'
-import HtgtPage from './components/howToGetThere/HtgtPage'
-import FlightPage from './components/flights/FlightPage'
-function App() {
-  const router = createBrowserRouter([
-    {
-      path: '/',
-      element: <HomePage />
-    },
-    {
-      path: '/get-in-touch',
-      element: <Mailing />
-    },
-    {
-      path: '/article',
-      element: <Article />
-    },
-    {
-      path: '/pledge',
-      element: <Perjanjian />
-    },
-    {
-      path: '/about',
-      element: <About />
-    },
-    {
-      path: '/how-to-get-there',
-      element: <HtgtPage />
-    },
-    {
-      path: '/flights-to-balikpapan',
-      element: <FlightPage />
-    }
-  ])
-  return(
-    <RouterProvider router={router}></RouterProvider>
-    // <>
-     
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './components/Home';
+import Mailing from './components/Mailing';
+import Article from './components/Article';
+import Perjanjian from './pages/Perjanjian';
+import About from './pages/About';
+import HtgtPage from './components/howToGetThere/HtgtPage';
+import FlightPage from './components/flights/FlightPage';
 
-    //  <Nav />
-    //  <Hero />
-    //  <Escape />
-    //  <Things />
-    //  {/* <News /> */}
-    //  <Analytics />
-    // </>
-  )
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/get-in-touch" element={<Mailing />} />
+        <Route path="/article" element={<Article />} />
+        <Route path="/pledge" element={<Perjanjian />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/how-to-get-there" element={<HtgtPage />} />
+        <Route path="/flights-to-balikpapan" element={<FlightPage />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
