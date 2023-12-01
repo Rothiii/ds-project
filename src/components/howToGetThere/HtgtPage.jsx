@@ -1,4 +1,4 @@
-import HtgtCard from './htgtCard';
+import HtgtCard from './HtgtCard';
 import { DataHtgt } from '../../Data/DataHtgt';
 import Nav from '../Nav/Nav';
 const HtgtPage = () => {
