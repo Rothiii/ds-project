@@ -6,6 +6,7 @@ import Article from './components/Article'
 import Perjanjian from './pages/Perjanjian'
 import About from './pages/About'
 import HtgtPage from './components/howToGetThere/htgtPage'
+import FlightPage from './components/flights/FlightPage'
 function App() {
   const router = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ function App() {
     {
       path: '/how-to-get-there',
       element: <HtgtPage />
+    },
+    {
+      path: '/flights-to-balikpapan',
+      element: <FlightPage />
     }
   ])
   return(

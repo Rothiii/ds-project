@@ -1,7 +1,7 @@
 export const DataHtgt = [
     {
       id: 1,
-      reflink: "#",
+      reflink: "/flights-to-balikpapan",
       image: './airplane.jpg',
       title: 'Flights to Balikpapan',
       desc:

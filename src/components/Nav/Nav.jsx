@@ -7,26 +7,26 @@ function Nav() {
       </div>
       <div className="navbar-center">
         <ul className="menu menu-horizontal text-white font-semibold text-[3vw] md:text-[2vw] lg:text-[1.2vw] p-[0px]">
-          <li className='hover:text-black'>
+          <li className='hover:text-gray-300'>
             <a href='/'>Home</a>
           </li>
-          <li className='hover:text-black'>
+          <li className='hover:text-gray-300'>
             <a href='/about'>About</a>
           </li>
           <li tabIndex={0}>
             <details>
-              <summary className='hover:text-black'>Services</summary>
+              <summary className='hover:text-gray-300'>Services</summary>
               <ul className="p-2 text-black bg-zinc-300/50">
-                <li className='hover:text-white'>
+                <li className='hover:text-gray-600'>
                   <a>Things To Do</a>
                 </li>
-                <li className='hover:text-white'>
+                <li className='hover:text-gray-600'>
                   <a>Discover Balikpapan</a>
                 </li>
               </ul>
             </details>
           </li>
-          <li className='hover:text-black'>
+          <li className='hover:text-gray-300'>
             <a href='/how-to-get-there'>How To get There</a>
           </li>
         </ul>
