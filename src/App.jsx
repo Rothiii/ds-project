@@ -3,6 +3,8 @@ import HomePage from './components/Home'
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import Mailing from './components/Mailing'
 import Article from './components/Article'
+import Perjanjian from './pages/Perjanjian'
+
 function App() {
   const router = createBrowserRouter([
     {
@@ -16,6 +18,10 @@ function App() {
     {
       path: 'article',
       element: <Article />
+    },
+    {
+      path: '/pledge',
+      element: <Perjanjian />
     }
   ])
   return(

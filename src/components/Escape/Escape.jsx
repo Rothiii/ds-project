@@ -4,7 +4,7 @@ import { DataEscape } from '../../Data/DataEscape';
 function Escape() {
   return (
     <div className="">
-      <h1 className="pl-[6vw] xl:pl-[8vw] my-[1rem] font-bold text-[7vw] md:text-[4vw] lg:text-[2vw]">
+      <h1 className="pl-[6vw] xl:pl-[8vw] my-[1rem] font-bold text-[7vw] md:text-[4.5vw] lg:text-[2vw]">
         Escape The Ordinary
       </h1>
       {/* Wrapper Kolom Kiri Kanan */}
