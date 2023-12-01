@@ -5,7 +5,7 @@ import Mailing from './components/Mailing'
 import Article from './components/Article'
 import Perjanjian from './pages/Perjanjian'
 import About from './pages/About'
-import htgtPage from './components/howToGetThere/htgtPage'
+import HtgtPage from './components/howToGetThere/htgtPage'
 function App() {
   const router = createBrowserRouter([
     {
@@ -30,7 +30,7 @@ function App() {
     },
     {
       path: '/how-to-get-there',
-      element: <htgtPage />
+      element: <HtgtPage />
     }
   ])
   return(

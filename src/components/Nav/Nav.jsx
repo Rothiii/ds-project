@@ -27,7 +27,7 @@ function Nav() {
             </details>
           </li>
           <li className='hover:text-black'>
-            <a href=''>How To get There</a>
+            <a href='/how-to-get-there'>How To get There</a>
           </li>
         </ul>
       </div>

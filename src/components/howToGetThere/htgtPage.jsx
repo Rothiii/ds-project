@@ -1,11 +1,11 @@
-import htgtCard from "./htgtCard";
+import HtgtCard from "./HtgtCard";
 
-const htgtPage = () => {
+const HtgtPage = () => {
     return ( 
         <div className="content">
-            <htgtCard />
+            <HtgtCard />
         </div>
      );
 }
  
-export default htgtPage;
+export default HtgtPage;
