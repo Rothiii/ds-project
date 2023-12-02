@@ -13,6 +13,7 @@ import ArticleList from './components/Article/ArticleList'
 function App() {
   const articleUrls = [
     "https://blog.tiket.com/en/balikpapan-tourist-attractions/",
+    "https://www.difawisata.com/articles/32-must-visit-attractions-in-balikpapan-while-on-vacation/"
   ]
   const router = createBrowserRouter([
     {

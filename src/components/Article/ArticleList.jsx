@@ -7,7 +7,7 @@ function ArticleList({ articleUrls }) {
     <div>
       {articleUrls.map((url, i) => (
         <div key={i}>
-          <Link to={`/article/${encodeURIComponent(url)}`}>Article {i + 1}</Link>
+          <Link to={`/article/${encodeURIComponent(url.replace(/\./g,'<dot>'))}`}>Article {i + 1}</Link>
         </div>
       ))}
     </div>
