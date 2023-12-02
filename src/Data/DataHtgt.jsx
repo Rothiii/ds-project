@@ -19,7 +19,7 @@ export const DataHtgt = [
     },
     {
       id: 3,
-      reflink: "#",
+      reflink: "/ferries-to-balikpapan",
       image: './ferry.jpg',
       title: 'Ferry to Balikpapan',
       desc:

@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-function TaxiCard({ reflink, image, title }) {
+function FerryCard({ reflink, image, title }) {
     return (
       <a href={reflink}>
         <div className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-xl dark:hover:bg-gray-100">
@@ -12,4 +12,4 @@ function TaxiCard({ reflink, image, title }) {
     );
   }
   
-  export default TaxiCard;
+  export default FerryCard;
