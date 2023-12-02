@@ -8,6 +8,7 @@ import About from './pages/About'
 import HtgtPage from './components/howToGetThere/HtgtPage'
 import FlightPage from './components/flights/FlightPage'
 import TaxiPage from './components/Taxi/TaxiPage'
+import FerryPage from './components/Ferry/FerryPage'
 function App() {
   const router = createBrowserRouter([
     {
@@ -41,6 +42,10 @@ function App() {
     {
       path: 'taxis-and-buses',
       element: <TaxiPage />
+    },
+    {
+      path: 'ferries-to-balikpapan',
+      element: <FerryPage />
     }
   ])
   return(
