@@ -7,6 +7,7 @@ import Perjanjian from './pages/Perjanjian'
 import About from './pages/About'
 import HtgtPage from './components/howToGetThere/HtgtPage'
 import FlightPage from './components/flights/FlightPage'
+import TaxiPage from './components/Taxi/TaxiPage'
 function App() {
   const router = createBrowserRouter([
     {
@@ -36,6 +37,10 @@ function App() {
     {
       path: '/flights-to-balikpapan',
       element: <FlightPage />
+    },
+    {
+      path: 'taxis-and-buses',
+      element: <TaxiPage />
     }
   ])
   return(
