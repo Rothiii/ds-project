@@ -1,8 +1,11 @@
 import { CalendarDaysIcon, HandRaisedIcon } from '@heroicons/react/24/outline';
+import Nav from './Nav/Nav';
 
 const Mailing = () => {
   return (
-    <div className="relative flex items-center justify-center isolate overflow-hidden bg-gray-900 h-screen" style={{backgroundImage: "url(./beruang.png)", backgroundPosition: 'center', filter: 'brightness(65%)'}}>
+    <div>
+      <Nav />
+    <div className="relative flex items-center justify-center isolate overflow-hidden bg-gray-900 h-screen" style={{backgroundImage: "url(./beruang3.png)", backgroundPosition: 'center'}}>
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
           <div className="max-w-xl lg:max-w-lg">
@@ -62,6 +65,7 @@ const Mailing = () => {
           }}
         />
       </div>
+    </div>
     </div>
   );
 }
