@@ -4,7 +4,7 @@ function NavBar() {
     <div className="navbar bg-base-100 absolute flex justify-around py-[1.5rem] md:px-[4rem]">
       <div className="hidden navbar-start lg:inline-flex">
         <a className="text-xl btn btn-ghost" href='/'>
-          <img src="" alt="" />
+          <img src="bghitam.png" alt="Eksplore Logo Hitam" style={{height: "170px", width: "auto", marginTop: "-65px"}}/>
           {/* untuk background terang */}
         </a>
       </div>
