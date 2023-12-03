@@ -13,21 +13,16 @@ function About() {
                     About Us
                 </h2>
                 <p class="mb-10 text-base leading-7 text-gray-500 dark:text-gray-400">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniamLorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
+                Explore Balikpapan
+
+                  Welcome to Explore Balikpapan, a digital hub dedicated to showcasing the beauty and richness of our beloved city, Balikpapan. As a passionate team in the realm of local tourism, we are committed to providing unforgettable experiences for visitors and offering local residents profound insights into the wonders that surround us.
+
+                  Explore Balikpapan was born from the desire to connect people with the unique attractions of Balikpapan, ranging from the natural beauty to cultural heritage and the delightful local cuisine. We pledge to deliver accurate, inspirational, and useful information for anyone looking to explore the charms of this city.
+
+                  Through our content, we invite you to feel the warmth of the Balikpapan community, explore amazing tourist destinations, and discover intriguing stories behind every corner of the city. Together, let's build a closer-knit community and enrich the tourism experience in Balikpapan.
+
+                  Thank you for joining us on this journey. Let's explore and enjoy the beauty of Balikpapan together with Explore Balikpapan!
                 </p>
-                <a href="#"
-                    class="px-4 py-3 text-blue-700 transition-all transform border border-blue-500 rounded-3xl hover:bg-blue-600 dark:border-blue-400 dark:hover:bg-blue-500 dark:hover:text-gray-100 dark:hover:border-blue-500 dark:text-blue-400 hover:text-gray-100">
-                    Discover more
-                </a>
             </div>
         </div>
     </div>
