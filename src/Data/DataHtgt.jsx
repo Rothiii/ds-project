@@ -10,16 +10,16 @@ export const DataHtgt = [
     },
     {
       id: 2,
-      reflink: "#",
+      reflink: "/taxis-and-buses",
       image: './buses.jpg',
-      title: 'Taxis and Travel Busses',
+      title: 'Taxis and Travel Buses',
       desc:
         'Wanting to enjoy the sights as you get to our beloved city? Take a ride to Balikpapan City!',
       
     },
     {
       id: 3,
-      reflink: "#",
+      reflink: "/ferries-to-balikpapan",
       image: './ferry.jpg',
       title: 'Ferry to Balikpapan',
       desc:

@@ -2,13 +2,20 @@ import './App.css'
 import HomePage from './components/Home'
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
 import Mailing from './components/Mailing'
-import Article from './components/Article'
 import Perjanjian from './pages/Perjanjian'
 import About from './pages/About'
 import HtgtPage from './components/howToGetThere/HtgtPage'
 import FlightPage from './components/flights/FlightPage'
 import InfoThings from './components/Thing/InfoThings'
+import TaxiPage from './components/Taxi/TaxiPage'
+import FerryPage from './components/Ferry/FerryPage'
+import ArticlePage from './components/Article/ArticlePage'
+import ArticleList from './components/Article/ArticleList'
 function App() {
+  const articleUrls = [
+    "https://blog.tiket.com/en/balikpapan-tourist-attractions/",
+    "https://www.difawisata.com/articles/32-must-visit-attractions-in-balikpapan-while-on-vacation/"
+  ]
   const router = createBrowserRouter([
     {
       path: '/',
@@ -20,7 +27,7 @@ function App() {
     },
     {
       path: '/article',
-      element: <Article />
+      element: <ArticlePage />
     },
     {
       path: '/pledge',
@@ -43,8 +50,25 @@ function App() {
       element: <InfoThings />
     },
     {
+      
+      path: 'taxis-and-buses',
+      element: <TaxiPage />
+    },
+    {
+      path: 'ferries-to-balikpapan',
+      element: <FerryPage />
+    },
+    {
+      path: 'discover-balikpapan',
+      element: <ArticleList articleUrls={articleUrls} />
+    },
+    {
+      path: 'article/:articleUrl',
+      element: <ArticlePage />
+    },
+    {
       path: '*',
-      element: <h1>404 Not Found</h1>
+      element: <h1>404 Page Not Found</h1>
     }
   ])
   return(

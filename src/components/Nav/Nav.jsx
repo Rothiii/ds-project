@@ -1,9 +1,12 @@
 import Button from './Button.jsx'
 function Nav() {
   return (
-    <div className="navbar bg-base-100 absolute flex justify-around py-[1.5rem] md:px-[4rem]">
-      <div className="hidden navbar-start lg:inline-flex">
-        <a className="text-xl btn btn-ghost">LOGO</a>
+    <div className="navbar bg-base-100 absolute flex items-center justify-around py-[1.5rem] md:px-[4rem] z-50">
+      <div className="hidden navbar-start lg:inline-flex items-center">
+        <a className="text-xl btn btn-ghost" href='/'>
+          <img src="bgputih.png" alt="Eksplore Logo Putih" style={{height: "170px", width: "auto", marginTop: "-65px"}}/> 
+          {/* untuk background gelap */}
+        </a>
       </div>
       <div className="navbar-center">
         <ul className="menu menu-horizontal text-white font-semibold text-[3vw] md:text-[2vw] lg:text-[1.2vw] p-[0px]">
@@ -21,7 +24,7 @@ function Nav() {
                   <a>Things To Do</a>
                 </li>
                 <li className='hover:text-gray-600'>
-                  <a>Discover Balikpapan</a>
+                  <a href='discover-balikpapan'>Discover Balikpapan</a>
                 </li>
               </ul>
             </details>
