@@ -1,7 +1,16 @@
 /* eslint-disable react/prop-types */
 import NavBar from '../NavBar';
+import { useParams } from 'react-router-dom';
+import { DataArtikel } from '../../Data/DataThings';
 
-function Ttd({ Judul }) {
+function Ttd() {
+  const { id } = useParams();
+  const selectedArticle = DataArtikel.find(article => article.id === parseInt(id));
+  if (!selectedArticle) {
+    // Jika Things tidak ditemukan, tampilkan pesan atau redirect
+    return <h1>Article not found</h1>;
+  }
+  
   return (
     <>
       <NavBar />
@@ -9,24 +18,24 @@ function Ttd({ Judul }) {
         {/* Kolom kiri */}
         <div className="w-[50%]">
           <h1 className="text-[3vh] font-bold">
-            {Judul}Warna Pleangi Tour & Travel
+            {selectedArticle.judul}
           </h1>
           <p className="text-[2vh] ">
-            Sun qui doloremque quia. Quisquam voluptatem voluptatem voluptatem.
-            adsadadadadaddas ddsa asasdadasdasasdasd as das d /adadas asd as
-            adsd saaasdasd ad asd as as ds adskl
+          {selectedArticle.desc}
           </p>
         </div>
         {/* Kolom kanan */}
         <div className="w-[35%]">
-          <h1 className='font-bold'>Contact</h1>
+          <h1 className="font-bold">Contact</h1>
           <div className="flex items-center">
             <img
               src="../icon _telephone_.png"
               alt="icon"
               className="h-[2vh] md:h-[30px]"
             />
-            <p className="text-[2vh] pl-[2rem]">xxx - xxx -xxx</p>
+            <p className="text-[2vh] pl-[0.5rem] md:pl-[2rem]">
+              xxx - xxx -xxx
+            </p>
           </div>
           <div className="flex items-center">
             <img
@@ -34,25 +43,45 @@ function Ttd({ Judul }) {
               alt="icon"
               className="h-[2vh] md:h-[30px]"
             />
-            <p className="text-[2vh] pl-[1.5rem]">xxx - xxx -xxx</p>
+            <p className="text-[2vh] pl-[0.5rem] md:pl-[1.5rem]">
+              xxx - xxx -xxx
+            </p>
           </div>
-          <h1 className='font-bold'>Things To Do</h1>
-          <div className="flex">
-            <input type="checkbox" />
-            <label htmlFor="checkbox">a</label>
-            <input type="checkbox" />
-            <label htmlFor="checkbox">b</label>
-            <input type="checkbox" />
-            <label htmlFor="checkbox">c</label>
+          <h1 className="font-bold">Things To Do</h1>
+          <div className="flex flex-col text-[2vh]">
+            <div>
+              <input type="checkbox" />
+              <label htmlFor="checkbox">Berenang</label>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label htmlFor="checkbox">Bermain Pasir</label>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <label htmlFor="checkbox">Spot foto</label>
+            </div>
           </div>
         </div>
       </div>
       <div className=" mx-[10vw] mt-[5vw]">
         <h1 className="font-bold">Gallery</h1>
         <div className="flex items-center justify-between">
-          <img src="../icon _mail_.png" alt="" className="w-[30%] h-[25vw] md:h-[20vw]" />
-          <img src="../icon _mail_.png" alt="" className="w-[30%] h-[30vw] md:h-[25vw]" />
-          <img src="../icon _mail_.png" alt="" className="w-[30%] h-[25vw] md:h-[20vw]" />
+          <img
+            src="../icon _mail_.png"
+            alt=""
+            className="w-[30%] h-[25vw] md:h-[20vw]"
+          />
+          <img
+            src="../icon _mail_.png"
+            alt=""
+            className="w-[30%] h-[30vw] md:h-[25vw]"
+          />
+          <img
+            src="../icon _mail_.png"
+            alt=""
+            className="w-[30%] h-[25vw] md:h-[20vw]"
+          />
         </div>
       </div>
       <footer />

@@ -19,7 +19,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/how-to-get-there" element={<HtgtPage />} />
         <Route path="/flights-to-balikpapan" element={<FlightPage />} />
-        <Route path="/ThingsToDo" element={<Ttd />} />
+        {/* <Route path="/ThingsToDo" element={<Ttd />} /> */}
+        <Route path="/ThingsToDo/:id" element={<Ttd />} />
         <Route path="*" element={<h1>Not Found</h1>} />
       </Routes>
     </Router>
