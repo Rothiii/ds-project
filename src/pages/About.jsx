@@ -1,6 +1,9 @@
+import NavBar from "../components/NavBar";
 
 function About() {
   return (
+    <div>
+      <NavBar />
     <section class="flex items-center bg-stone-100 xl:h-screen font-poppins dark:bg-gray-800 ">
     <div class="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
         <div class="flex flex-wrap ">
@@ -27,6 +30,7 @@ function About() {
         </div>
     </div>
 </section>
+</div>
   )
 }
 
