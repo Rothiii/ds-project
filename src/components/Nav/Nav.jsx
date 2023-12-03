@@ -1,7 +1,7 @@
 import Button from './Button.jsx'
 function Nav() {
   return (
-    <div className="navbar bg-base-100 absolute flex justify-around py-[1.5rem] md:px-[4rem]">
+    <div className="navbar bg-base-100 absolute flex justify-around py-[1.5rem] md:px-[4rem] z-50">
       <div className="hidden navbar-start lg:inline-flex">
         <a className="text-xl btn btn-ghost">LOGO</a>
       </div>
