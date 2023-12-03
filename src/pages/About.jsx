@@ -18,7 +18,7 @@ function About() {
                 <h2 class="mb-4 text-4xl font-semibold text-blue-500 dark:text-gray-300">
                     About Us
                 </h2>
-                <p class="mb-10 text-base leading-7 text-gray-500 dark:text-gray-400">
+                <p class="mb-10 text-base leading-7 text-gray-500 dark:text-gray-400 text-justify">
                 Explore Balikpapan
 
                   Welcome to Explore Balikpapan, a digital hub dedicated to showcasing the beauty and richness of our beloved city, Balikpapan. As a passionate team in the realm of local tourism, we are committed to providing unforgettable experiences for visitors and offering local residents profound insights into the wonders that surround us.

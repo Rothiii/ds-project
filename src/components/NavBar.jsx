@@ -3,7 +3,10 @@ function NavBar() {
   return (
     <div className="navbar bg-base-100 absolute flex justify-around py-[1.5rem] md:px-[4rem]">
       <div className="hidden navbar-start lg:inline-flex">
-        <a className="text-xl btn btn-ghost">LOGO</a>
+        <a className="text-xl btn btn-ghost" href='/'>
+          <img src="bghitam.png" alt="Eksplore Logo Hitam" style={{height: "170px", width: "auto", marginTop: "-65px"}}/>
+          {/* untuk background terang */}
+        </a>
       </div>
       <div className="navbar-center">
         <ul className="menu menu-horizontal text-black font-semibold text-[3vw] md:text-[2vw] lg:text-[1.2vw] p-[0px]">

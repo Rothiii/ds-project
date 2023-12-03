@@ -6,6 +6,7 @@ import Perjanjian from './pages/Perjanjian'
 import About from './pages/About'
 import HtgtPage from './components/howToGetThere/HtgtPage'
 import FlightPage from './components/flights/FlightPage'
+import InfoThings from './components/Thing/InfoThings'
 import TaxiPage from './components/Taxi/TaxiPage'
 import FerryPage from './components/Ferry/FerryPage'
 import ArticlePage from './components/Article/ArticlePage'
@@ -45,6 +46,11 @@ function App() {
       element: <FlightPage />
     },
     {
+      path: '/ThingsToDo/:id',
+      element: <InfoThings />
+    },
+    {
+      
       path: 'taxis-and-buses',
       element: <TaxiPage />
     },
@@ -59,6 +65,10 @@ function App() {
     {
       path: 'article/:articleUrl',
       element: <ArticlePage />
+    },
+    {
+      path: '*',
+      element: <h1>404 Page Not Found</h1>
     }
   ])
   return(
