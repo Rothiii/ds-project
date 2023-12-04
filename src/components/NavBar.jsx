@@ -24,7 +24,7 @@ function NavBar() {
                   <a>Things To Do</a>
                 </li>
                 <li className='hover:text-black'>
-                  <a>Discover Balikpapan</a>
+                  <a href='/discover-balikpapan'>Discover Balikpapan</a>
                 </li>
               </ul>
             </details>
