@@ -1,5 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { useParams } from "react-router-dom";
+import DOMPurify from 'dompurify';
 import NavBar from "../NavBar";
 const ArticlePage = ({ articles }) => {
     // console.log(articles);
@@ -23,6 +24,7 @@ const ArticlePage = ({ articles }) => {
         return <div>Loading article...</div>
     }
 
+    const sanitizedContent = DOMPurify.sanitize(article.content);
 
     return (
         // if Article.length > 0 
@@ -43,11 +45,12 @@ const ArticlePage = ({ articles }) => {
                                     {article.title}
                                 </h1>
 
-                                <p className="mb-6 flex items-center font-bold uppercase text-danger dark:text-danger-500 text-justify"> </p>
+                                <p className="mb-6 flex items-center font-bold uppercase text-justify"> </p>
 
-                                <p className="mb-6">
+                                <div dangerouslySetInnerHTML={{__html: sanitizedContent}} />
+                                {/* <p className="mb-6">
                                     {article.content}
-                                </p>
+                                </p> */}
                             </section>
                         </div>
                     </div>
