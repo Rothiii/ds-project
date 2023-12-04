@@ -29,7 +29,7 @@ function App() {
             method: 'GET',
             headers: {
               'X-RapidAPI-Key': import.meta.env.VITE_RAPID_KEY,
-              'X-RapidAPI-Host': import.meta.env.VITE_RAPID_HOST
+              'X-RapidAPI-Host': 'article-extractor2.p.rapidapi.com'
             }
           });
 
