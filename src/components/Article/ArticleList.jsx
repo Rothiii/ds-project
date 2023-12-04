@@ -1,11 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import NavBar from '../NavBar';
 // import ArticlePage from './ArticlePage';
 
 function ArticleList({ articles }) {
   console.log({articles});
   return (
     <div>
+      <NavBar />
+      <div className="bg-local bg-cover bg-center h-[12vh] overflow-hidden">
+      </div>
+      <div className="flex justify-between items-end ">
+                <p className="pl-[6vw] xl:pl-[8vw] my-[1rem] font-bold text-[6vw] md:text-[4vw] lg:text-[2vw]">
+                Discover More About Balikpapan City!
+                </p>
+      </div>
+      <div className="mt-6 grid grid-cols-2 lg:grid-cols-4 gap-y-5 pl-[4vw]  sm:pl-[5vw] lg:pl-[5vw] xl:pl-[7.5vw] justify-items-center">
       {articles.map(({ data: article }, i) => {
         if (article == null) {
           return null;
@@ -27,7 +37,9 @@ function ArticleList({ articles }) {
       </div>
 
       }
+
       )}
+      </div>
     </div>
   );
 }
