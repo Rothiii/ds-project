@@ -12,7 +12,7 @@ function About() {
         <div class="flex flex-wrap ">
             <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
                 <img src="balikpapankota.jpeg" alt=""
-                    class="relative z-40 object-cover w-full h-100 rounded-3xl" />
+                    class=" z-40 object-cover w-full h-100 rounded-3xl" />
             </div>
             <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
                 <h2 class="mb-4 text-4xl font-semibold text-blue-500 dark:text-gray-300">
