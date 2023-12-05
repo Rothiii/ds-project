@@ -1,6 +1,7 @@
 import FerryCard from "./FerryCard";
 import { DataFerry } from "../../Data/DataFerry";
 import NavBar from "../NavBar";
+import Footer from "../Footer";
 const FerryPage = () => {
     return ( 
         <div className="content">
@@ -27,7 +28,7 @@ const FerryPage = () => {
                 );
                 })}
             </div>
-            
+            <Footer />
         </div>
      );
 }

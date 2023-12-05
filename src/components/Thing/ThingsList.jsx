@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from '../NavBar';
+import Footer from '../Footer';
 // import ArticlePage from './ArticlePage';
 
 function ThingsList({ touristAttracts }) {
@@ -40,6 +41,7 @@ function ThingsList({ touristAttracts }) {
 
       )}
       </div>
+      <Footer />
     </div>
   );
 }

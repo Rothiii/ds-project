@@ -1,6 +1,7 @@
 import FlightCard from "./FlightCard";
 import { DataFlight } from "../../Data/DataFlight";
 import NavBar from "../NavBar";
+import Footer from "../Footer";
 const FlightPage = () => {
     return ( 
         <div className="content">
@@ -27,7 +28,7 @@ const FlightPage = () => {
                 );
                 })}
             </div>
-            
+            <Footer />
         </div>
      );
 }
