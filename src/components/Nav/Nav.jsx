@@ -21,7 +21,7 @@ function Nav() {
               <summary className='hover:text-gray-300'>Services</summary>
               <ul className="p-2 text-black bg-zinc-300/50">
                 <li className='hover:text-gray-600'>
-                  <a>Things To Do</a>
+                  <a href='/Things-To-Do'>Things To Do</a>
                 </li>
                 <li className='hover:text-gray-600'>
                   <a href='discover-balikpapan'>Discover Balikpapan</a>

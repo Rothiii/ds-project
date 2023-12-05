@@ -12,6 +12,7 @@ import FerryPage from './components/Ferry/FerryPage'
 import ArticlePage from './components/Article/ArticlePage'
 import ArticleList from './components/Article/ArticleList'
 import { useEffect, useState } from 'react'
+import ThingsList from './components/Thing/ThingsList'
 function App() {
   const articleUrls = [
     "https://blog.tiket.com/en/balikpapan-tourist-attractions/",
@@ -141,6 +142,10 @@ function App() {
       path: 'article/:articleUrl',
       element: <ArticlePage articles={articles}/>
     },
+    {
+      path: 'Things-To-Do',
+      element: <ThingsList touristAttracts={touristAttracts} />
+    }
     // {
     //   path: '*',
     //   element: <h1>404 Page Not Found</h1>
