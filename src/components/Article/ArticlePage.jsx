@@ -2,6 +2,7 @@ import { useState, useEffect, useMemo } from "react";
 import { useParams } from "react-router-dom";
 import DOMPurify from 'dompurify';
 import NavBar from "../NavBar";
+import Footer from "../Footer";
 const ArticlePage = ({ articles }) => {
     // console.log(articles);
     const { articleUrl } = useParams();
@@ -53,6 +54,9 @@ const ArticlePage = ({ articles }) => {
                                 </p> */}
                             </section>
                         </div>
+                        
+                            <Footer />
+                        
                     </div>
                 )}
         </>

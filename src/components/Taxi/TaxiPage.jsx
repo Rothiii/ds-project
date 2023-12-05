@@ -1,6 +1,7 @@
 import TaxiCard from "./TaxiCard";
 import { DataTaxi } from "../../Data/DataTaxi";
 import NavBar from "../NavBar";
+import Footer from "../Footer";
 const TaxiPage = () => {
     return ( 
         <div className="content">
@@ -27,7 +28,7 @@ const TaxiPage = () => {
                 );
                 })}
             </div>
-            
+            <Footer />
         </div>
      );
 }

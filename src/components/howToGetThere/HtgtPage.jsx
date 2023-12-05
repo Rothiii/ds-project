@@ -1,6 +1,7 @@
 import HtgtCard from './HtgtCard';
 import { DataHtgt } from '../../Data/DataHtgt';
 import Nav from '../Nav/Nav';
+import Footer from '../Footer';
 const HtgtPage = () => {
   return (
     <div className="content">
@@ -33,6 +34,7 @@ const HtgtPage = () => {
           );
         })}
       </div>
+      <Footer />
     </div>
   );
 };
