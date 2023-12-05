@@ -1,11 +1,11 @@
 import Card from './Card';
-import { DataEscape } from '../../Data/DataEscape';
-
-function Escape() {
+// import { DataEscape } from '../../Data/DataEscape';
+import { Link } from 'react-router-dom';
+function Escape({articles}) {
   return (
     <div className="">
       <h1 className="pl-[6vw] xl:pl-[8vw] my-[1rem] font-bold text-[7vw] md:text-[4.5vw] lg:text-[2vw]">
-        Escape The Ordinary
+        Discover Balikpapan
       </h1>
       {/* Wrapper Kolom Kiri Kanan */}
       <div className="flex flex-col xl:flex-row justify-start gap-10 lg:pl-[1vw] xl:pl-[3vw]">
@@ -19,15 +19,20 @@ function Escape() {
         </div>
         {/* kolom kanan Sebagai content*/}
         <div className="flex flex-col justify-center items-start gap-5 lg:pl-[5vw] xl:pl-[1vw]">
-          {DataEscape.map((item) => {
-            return (
+          {articles.map(({data: article}, i) => {
+            if (article == null) {
+              return null;
+            }
+            return <div key={i} >
+              <Link to={`/article/${btoa(article.url)}`}>
               <Card
-                key={item.id}
-                gambar={item.gambar}
-                judul={item.judul}
-                desc={item.desc}
+                key={article.id}
+                gambar={article.image}
+                judul={article.title}
+                desc={article.description}
               />
-            );
+              </Link>
+            </div>
           })}
         </div>
       </div>

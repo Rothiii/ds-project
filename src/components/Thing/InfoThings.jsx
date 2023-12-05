@@ -1,15 +1,31 @@
 /* eslint-disable react/prop-types */
+import { useEffect, useState } from 'react';
 import NavBar from '../NavBar';
 import { useParams } from 'react-router-dom';
-import { DataThings } from '../../Data/DataThings';
+// import { DataThings } from '../../Data/DataThings';
 
-function InfoThings() {
-  const { id } = useParams();
-  const selectedArticle = DataThings.find(article => article.id === parseInt(id));
-  if (!selectedArticle) {
-    // Jika Things tidak ditemukan, tampilkan pesan atau redirect
-    return <h1>Article not found</h1>;
-  }
+function InfoThings({touristAttracts}) {
+  const { id: touristId } = useParams();
+  console.log({touristId, touristAttracts});
+
+  const [attract, setAttract] = useState(null);
+
+  useEffect(() => {
+    const fetchAttract = async () => {
+      const foundAttract = touristAttracts.find(t => t?.results?.location_id === touristId);
+      // console.log({foundAttract,})
+      setAttract(foundAttract?.results)
+    }
+    fetchAttract();
+  }, [touristId, attract, touristAttracts])
+if(attract == null) {
+  return <div>Loading...</div>
+}
+  // const selectedArticle = DataThings.find(article => article.id === parseInt(id));
+  // if (!selectedArticle) {
+  //   // Jika Things tidak ditemukan, tampilkan pesan atau redirect
+  //   return <h1>Article not found</h1>;
+  // }
   return (
     <>
       <NavBar />
@@ -17,10 +33,10 @@ function InfoThings() {
         {/* Kolom kiri */}
         <div className="w-[50%]">
           <h1 className="text-[3vh] font-bold">
-            {selectedArticle.judul}
+            {attract.name}
           </h1>
           <p className="text-[2vh] ">
-          {selectedArticle.desc}
+          {attract.description}
           </p>
         </div>
         {/* Kolom kanan */}
@@ -33,7 +49,7 @@ function InfoThings() {
               className="h-[2vh] md:h-[30px]"
             />
             <p className="text-[2vh] pl-[0.5rem] md:pl-[2rem]">
-              xxx - xxx -xxx
+              {attract.phone}
             </p>
           </div>
           <div className="flex items-center">
@@ -43,10 +59,10 @@ function InfoThings() {
               className="h-[2vh] md:h-[30px]"
             />
             <p className="text-[2vh] pl-[0.5rem] md:pl-[1.5rem]">
-              xxx - xxx -xxx
+              {attract.website}
             </p>
           </div>
-          <h1 className="font-bold">Things To Do</h1>
+          {/* <h1 className="font-bold">Things To Do</h1>
           <div className="flex flex-col text-[2vh]">
             <div>
               <input type="checkbox" />
@@ -60,25 +76,25 @@ function InfoThings() {
               <input type="checkbox" />
               <label htmlFor="checkbox">Spot foto</label>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className=" mx-[10vw] mt-[5vw]">
         <h1 className="font-bold">Gallery</h1>
         <div className="flex items-center justify-between">
           <img
-            src={selectedArticle.gambar}
-            alt={selectedArticle.id}
+            src={attract.photo.images.small.url}
+            alt={attract.name}
             className="w-[30%] h-[25vw] md:h-[20vw]"
           />
           <img
-            src={selectedArticle.gambar}
-            alt={selectedArticle.id}
+            src={attract.photo.images.small.url}
+            alt={attract.name}
             className="w-[30%] h-[30vw] md:h-[25vw]"
           />
           <img
-            src={selectedArticle.gambar}
-            alt={selectedArticle.id}
+            src={attract.photo.images.small.url}
+            alt={attract.name}
             className="w-[30%] h-[25vw] md:h-[20vw]"
           />
         </div>
