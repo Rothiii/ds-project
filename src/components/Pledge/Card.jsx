@@ -8,7 +8,7 @@ function News({ imgSrc, title, description, href }) {
         <a className="btn-primary text-[5vw] md:text-[2vw] lg:text-[1.5vw] w-[90vw] md:w-[15vw] text-center" href={href}>More about</a>
       </div>
       <div className="">
-        <img src={imgSrc} alt="News Image" className="px-5 rounded-2xl xl:rounded-3xl object-cover object-center h-[50vw] md:w-[50vw] md:h-[30vw] lg:h-[30vw] xl:h-[17vw] xl:h-[15vw]"/>
+        <img src={imgSrc} alt="News Image" className="px-2 rounded-2xl xl:rounded-3xl object-cover object-center h-[50vw] md:w-[50vw] md:h-[30vw] lg:h-[30vw] xl:h-[17vw] xl:h-[15vw]"/>
       </div>
     </div>
   );
