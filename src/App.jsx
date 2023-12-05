@@ -12,13 +12,22 @@ import FerryPage from './components/Ferry/FerryPage'
 import ArticlePage from './components/Article/ArticlePage'
 import ArticleList from './components/Article/ArticleList'
 import { useEffect, useState } from 'react'
+import ThingsList from './components/Thing/ThingsList'
 function App() {
   const articleUrls = [
     "https://blog.tiket.com/en/balikpapan-tourist-attractions/",
-    "https://www.difawisata.com/articles/32-must-visit-attractions-in-balikpapan-while-on-vacation/"
+    "https://www.difawisata.com/articles/32-must-visit-attractions-in-balikpapan-while-on-vacation/",
+    "https://www.smartertravel.com/balikpapan-nightlife-clubs-bars-nightlife-tips/"
+    ]
+  
+  const attractsId = [
+    "8797423",
+    "8797454",
+    "8797463"
   ]
 
   const [articles, setArticles] = useState([]);
+  const [touristAttracts,setTouristAttracts] = useState([]);
 
   useEffect(() => {
     const fetchArticles = async () => {
@@ -48,11 +57,45 @@ function App() {
   }, []);
 
 
+  useEffect(() => {
+    const fetchAttracts = async () => {
+      try {
+        const fetchedAttracts = await Promise.all(attractsId.map(async (id) => {
+          const response = await fetch(`https://tourist-attraction.p.rapidapi.com/detail`,
+          {
+            method: 'POST',
+            headers: {
+              'content-type': 'application/x-www-form-urlencoded',
+              'X-RapidAPI-Key': import.meta.env.VITE_RAPID_KEY,
+              'X-RapidAPI-Host': 'tourist-attraction.p.rapidapi.com'
+            },
+            body: new URLSearchParams({
+              location_id: id,
+              language: 'en_US',
+              currency: 'USD'
+            })
+          
+          });
+          if (response.ok) {
+            return await response.json();
+          } else {
+            console.error(`Failed to fetch tourist attraction spot with id: ${id}`)
+          }
+        }));
+        setTouristAttracts(fetchedAttracts.filter(it => it != null));
+      } catch (error) {
+          console.error(`Error while fetching data:`, error)
+      }
+    };
+    fetchAttracts();
+    console.log(touristAttracts)
+  }, []);
+
 
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <HomePage />
+      element: <HomePage articles={articles} touristAttracts={touristAttracts} />
     },
     {
       path: '/get-in-touch',
@@ -80,7 +123,7 @@ function App() {
     },
     {
       path: '/ThingsToDo/:id',
-      element: <InfoThings />
+      element: <InfoThings touristAttracts={touristAttracts} />
     },
     {
       
@@ -99,6 +142,10 @@ function App() {
       path: 'article/:articleUrl',
       element: <ArticlePage articles={articles}/>
     },
+    {
+      path: 'Things-To-Do',
+      element: <ThingsList touristAttracts={touristAttracts} />
+    }
     // {
     //   path: '*',
     //   element: <h1>404 Page Not Found</h1>

@@ -21,7 +21,7 @@ function NavBar() {
               <summary className='hover:text-black'>Services</summary>
               <ul className="p-2 text-black bg-zinc-300/50">
                 <li className='hover:text-black'>
-                  <a>Things To Do</a>
+                  <a href='/Things-To-Do'>Things To Do</a>
                 </li>
                 <li className='hover:text-black'>
                   <a href='/discover-balikpapan'>Discover Balikpapan</a>

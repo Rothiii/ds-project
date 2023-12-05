@@ -5,13 +5,13 @@ import Things from './Thing/Things'
 import Pledge from './Pledge/Pledge'
 import { Analytics } from '@vercel/analytics/react'
 
-const HomePage = () => {
+const HomePage = ({articles, touristAttracts}) => {
     return (
         <div className="content">
             <Nav />
             <Hero />
-            <Escape />
-            <Things />
+            <Escape articles={articles}/>
+            <Things touristAttracts={touristAttracts}/>
             <Pledge />
             <Analytics />
         </div>
