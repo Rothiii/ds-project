@@ -41,7 +41,7 @@ const Perjanjian = () => {
   const isLastDataDesc = currentIndex === data[0].deskripsi.length;
 
   return (
-    <div className="">
+    <div className="h-[100vh] decoration-red-500 underline " style={{backgroundImage: "url(./viewbpp.jpg)"}}>
       {/* Opening */}
       <div>
         {currentIndex === -1 ? (
